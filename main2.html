@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body style="background-color: black;">
+    <!--BUSQUEDA-->
+    <div id="cotiza" class="cotiza">
+        <div class="cotiza-form">
+            <h4><strong>Consultar Perro</strong></h4>
+            <p>Introduce los datos para buscar a tu perro</p>
+            <form action="buscar_perro.php" method="POST">
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Su Nombre" name="Nombre">
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="container-submit">
+                    <button type="submit" class="btnCotizar" name="buscar_perro">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/popper.min.js "></script>
+</body>
+</html>

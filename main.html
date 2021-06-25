@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body style="background-color: black;">
+    <!--REGISTRO-->
+    <div id="cotiza" class="cotiza">
+        <div class="cotiza-form">
+            <h4><strong>Registra un perro</strong></h4>
+            <p>Introduce los datos de tu perro</p>
+            <form action="registrar_perro.php" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="" class="form-label">DNI</label>
+                    <input type="text" class="form-control" placeholder="Su dni" name="DNI">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Su Nombre" name="Nombre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Fecha de Nacimiento</label>
+                    <input type="Date" class="form-control" name="fechaNac">
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input name="Genero" Type = "Radio" value="Macho"><label for="" class="form-label">Macho</label>
+                    <input name="Genero" Type = "Radio" value="Hembra"><label for="" class="form-label">Hembra</label>
+                </div>
+
+                <div class="mb-3">
+                    <Select name = "Raza" class="form-select">
+                        <Option value = "Pitbull"> Pitbull
+                        <Option value = "Bulldog"> Bulldog
+                        <Option value = "Shichu"> Shichu
+                        <Option value = "Pequines"> Pequines
+                        <Option value = "San Bernardo"> San Bernardo
+                        <Option value = "Chiguahua"> Chiguahua
+                    </Select></P>
+                </div>
+
+                <div class="mb-3">
+                    <input type = "file" name = "Foto">
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="container-submit">
+                    <button type="submit" class="btnCotizar" name="registrar_perro">Registrar</button>
+                </div>
+                
+            </form>
+            <div class="mb-3 container-submit">
+                <button class="btnCotizar" name="buscar"><a href="main2.html">Buscar</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/popper.min.js "></script>
+</body>
+</html>
